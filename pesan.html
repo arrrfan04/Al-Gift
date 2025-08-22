@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesan buat Pak Al</title>
+    <!-- Memuat Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="page-four" class="page">
+      <h1 class="message-title">Pesan dari Arf'</h1>
+
+      <div class="message-container">
+        <div class="message-box">
+          <p>
+            Dear Pak Al, Terima kasih sudah mau menjadi rekan kerja yang baik dalam segala hal, sudah banyak mengajari kita banyak hal terutama tentang pekerjaan saat pertama kali masuk. Terima Kasih juga karena sudah menjadi benteng
+            pertahanan bagi Admin Produksi ketika ada masalah dengan karyawan, dan terima kasih sudah membuat ruangan produksi menjadi lebih berwarna setiap harinya.
+            <br /><br />
+            Mohon maaf jika selama bekerja ada salah kata atau perilaku dari kita yang mungkin kurang berkenaan, Sukses selalu buat Pak Al kedepannya,semoga Ibunda tercintanya cepat sembuh Pak Al, Aamiinn...
+          </p>
+        </div>
+
+        <img src="assets/PakAl.jpg" alt="Gambar Al" class="message-image" />
+      </div>
+
+      <a href="page3.html" id="backButton" class="back-button">Kembali</a>
+    </div>
+
+    <script>
+      const backButton = document.getElementById("backButton");
+      backButton.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.body.classList.add("fade-out");
+        setTimeout(() => {
+          window.location.href = this.href;
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
